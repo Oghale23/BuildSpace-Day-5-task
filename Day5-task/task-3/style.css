@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background: #f3f0ff;
+  color: #1f1b3a;
+  padding: 24px 16px;
+}
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 18px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #5b3df5;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover {
+  background: #4529d6;
+}
+button.ghost {
+  background: #e8e4ff;
+  color: #1f1b3a;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.count {
+  font-size: 28px;
+  font-weight: 700;
+  min-width: 40px;
+  text-align: center;
+}
+.add-row {
+  display: flex;
+  gap: 8px;
+}
+input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #c9c2f5;
+  border-radius: 8px;
+  font: inherit;
+}
+.preview {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6b6590;
+}
+.list-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f7f5ff;
+  cursor: pointer;
+}
+li.done span {
+  text-decoration: line-through;
+  color: #8d88ad;
+}
+li button {
+  background: #ffe1e1;
+  color: #b3261e;
+  padding: 4px 10px;
+}
+.summary {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #6b6590;
+}
+.hidden {
+  display: none;
+}

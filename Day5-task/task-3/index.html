@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1 id="title">My To-Do List</h1>
+      <button type="button" id="change-btn">Change title</button>
+    </header>
+
+    <section class="card">
+      <p class="label">Daily goal (tasks)</p>
+      <div class="counter">
+        <button type="button" id="minus">−</button>
+        <span id="count" class="count">0</span>
+        <button type="button" id="plus">+</button>
+        <button type="button" id="reset" class="ghost">Reset</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <label for="task-input" class="label">New task</label>
+      <div class="add-row">
+        <input type="text" id="task-input" placeholder="e.g. Finish Day 5 task" />
+        <button type="button" id="add-btn">Add</button>
+      </div>
+      <p class="preview">You're typing: <span id="live-text"></span></p>
+    </section>
+
+    <section class="card">
+      <div class="list-head">
+        <h2>Tasks</h2>
+        <button type="button" id="toggle-btn" class="ghost">Hide tasks</button>
+      </div>
+      <ul id="task-list"></ul>
+      <p id="summary" class="summary">0 of 0 done</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

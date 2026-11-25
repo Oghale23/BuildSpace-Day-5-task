@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: bisque;
+  --cream: hsl(35, 100%, 97%);
+  --brown-900: hsl(25, 45%, 18%);
+  --brown-600: hsl(25, 55%, 38%);
+  --gold: hsl(38, 90%, 55%);
+}
+
+body {
+  min-height: 100vh;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--brown-900);
+  background-color: bisque;
+}
+.container {
+  width: 100%;
+  max-width: 480px;
+  border: 2px solid var(--brown-900);
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--cream);
+  box-shadow: 6px 6px 0 var(--brown-900);
+}
+h1 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+.hero-img {
+  width: 100%;
+  display: block;
+  border-radius: 30px;
+}
+.intro {
+  margin-top: 16px;
+}
+.menu-intro {
+  margin-top: 24px;
+  font-weight: 600;
+}
+.menu-list {
+  margin-top: 12px;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+.menu-item {
+  padding: 12px 16px;
+  border: 2px solid var(--brown-900);
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  box-shadow: 3px 3px 0 var(--brown-900) ;
+}
+.menu-item:hover {
+  background-color: bisque;
+}
+.menu-item.selected {
+  background-color: var(--gold);
+  font-weight: 700;
+}
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--brown-900);
+  font: inherit;
+  cursor: pointer;
+  color: var(--cream);
+}
+
+.highlight {
+  color: brown;
+  background-color: #fff0d9;
+  padding: 10px;
+  border-radius: 8px;
+}
