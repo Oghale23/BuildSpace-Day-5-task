@@ -25,4 +25,14 @@ multipleElement.forEach(function (item) {
 // multipleElement.forEach(function (item) {
 //   console.log(item);
 //   item.textContent = "Vanilla Cookies";
-// });
+// // });
+// What is the DOM?
+// DOM- Document Object model is a programming representation of an html document that a browser creates when a webpage loads
+// Q2 How is the DOM different from the HTML source code?
+// The DOM is different because HTML source code contains the original HTML elements and content while HTML source code contains the original HTML elements and content.
+// The DOM represents those elements as objects in a tree structure.
+
+
+// Q3
+// Why can JavaScript change the webpage without reloading it?
+
