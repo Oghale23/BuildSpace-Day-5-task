@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="login">
+      <h1>Register</h1>
+      <form id="signup-form" novalidate>
+        <div class="field">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+          />
+          <p class="error" id="name-error"></p>
+        </div>
+        <br />
+        <div class="field">
+            <label for="email"> Email Adress:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+               <p class="error" id="email-error"></p>
+        </div>
+        <br>
+        <div class="field">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+               <p class="error" id="password-error"></p>
+
+        </div>
+        <br>
+        <button> Submit Form</button>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
